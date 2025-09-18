@@ -17,9 +17,8 @@ class PapersServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('papers-for-laravel')
-            ->hasConfigFile()
+            ->hasConfigFile('papers')
             ->hasViews()
-            ->hasMigration('create_papers_for_laravel_table')
             ->hasCommand(PapersCommand::class);
     }
 }
